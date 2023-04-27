@@ -36,7 +36,7 @@ SHORTCUTS={
 
 ### One Time:
 
-1. Run the `SuperPass.py` script by double-clicking on the Python file, or run the script from the Command Prompt or PowerShell with the following command:
+Run the `SuperPass.py` script by double-clicking on the Python file, or run the script from the Command Prompt or PowerShell with the following command:
 
 ```
 python SuperPass.py
@@ -48,32 +48,34 @@ To stop the script, either close the Command Prompt or PowerShell window or use 
 
 ### Creating an executable that starts automatically upon startup:
 
-Install pyinstaller if you haven't already. Open a Command Prompt or PowerShell and run the following command:
+1. Install pyinstaller if you haven't already. Open a Command Prompt or PowerShell and run the following command:
 
 ```
 pip install pyinstaller
 ```
 
-Navigate to the directory containing your `SuperPass.py` script, and run the following command to create a single .exe file:
+2. Navigate to the directory containing your `SuperPass.py` script, and run the following command to create a single .exe file:
 
 ```
 pyinstaller --onefile SuperPass.py
 ```
 
-This command will generate a standalone `.exe` file in the dist folder within the same directory as your script.
+3. This command will generate a standalone `.exe` file in the dist folder within the same directory as your script.
 
-Copy the generated .exe file (e.g., `SuperPass.exe`) from the dist folder.
+4. Copy the generated .exe file (e.g., `SuperPass.exe`) from the dist folder.
 
-Press Win+R to open the Run dialog, type shell:startup, and press Enter. This will open the Startup folder.
+5. Press `Win+R` to open the Run dialog, type shell:startup, and press Enter. This will open the `Startup` folder.
 
-Paste the copied `.exe` file into the Startup folder.
+6. Paste the copied `.exe` file into the `Startup` folder.
 
 Now, whenever you restart your Windows machine, the `SuperPass.exe` file will be executed automatically on startup, and the app will run in the background.
 
 # Notes
 
 Running scripts that capture keyboard input may trigger anti-virus or security software warnings. Be cautious when using such scripts, and only use them on your own computer or with proper authorization.
+
 Be careful when defining shortcuts to avoid conflicts with existing system or application shortcuts.
 
 # License
+
 This project is released under the MIT License. See the LICENSE file for more information.
